@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#shadow-circle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightblue;
+    opacity: 50%;
+    cursor: none;
+    box-shadow: 0 0 10px rgb(0, 0,255);
+    animation: shadow-grow 1s infinite alternate;
+
+}
+@keyframes shadow-grow {
+    0% {
+        box-shadow: 0 0 10px blue;
+    }
+    100% {
+        box-shadow: 0 0 30px blue;
+    }
+}
+
+/*.grow {*/
+/*    animation: grow-shrink 0.6s infinite alternate;*/
+/*}*/
+
+/*@keyframes grow-shrink {*/
+/*    0% {*/
+/*        width: 60px;*/
+/*        height: 60px;*/
+/*    }*/
+/*    100% {*/
+/*        width: 80px;*/
+/*        height: 80px;*/
+/*    }*/
+/*}*/
